@@ -1,4 +1,4 @@
-import { Link, useLocation } from "react-router-dom";
+import {  useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import { FaWhatsapp, FaEnvelope, FaInstagram } from "react-icons/fa6";
 
