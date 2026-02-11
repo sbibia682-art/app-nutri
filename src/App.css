@@ -1,0 +1,523 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* ===== HOME ===== */
+.home {
+  height: 100vh;
+  background: linear-gradient(135deg, #0f3d2e, #2e7d32, #66bb6a);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.home-overlay {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(5px);
+}
+
+.home-container {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 50px;
+  text-align: center;
+  max-width: 650px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.home-tag {
+  background: rgba(255, 255, 255, 0.2);
+  color: #e8f5e9;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  
+}
+
+.home-title {
+  color: white;
+  font-size: 42px;
+  margin: 15px 0;
+  font-weight: 700;
+}
+
+.home-text {
+  color: #e8f5e9;
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+.home-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+/* BOTÕES */
+.home-btn {
+  padding: 12px 22px;
+  border-radius: 30px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Botão principal */
+.primary {
+  background: #a5d6a7;
+  color: #0f3d2e;
+  font-weight: 600;
+}
+
+.primary:hover {
+  background: #81c784;
+  transform: translateY(-2px);
+}
+
+/* Botão secundário */
+.secondary {
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+.secondary:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+
+
+/* ===== AGENDA ===== */
+.agenda-page {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.agenda-title {
+  text-align: center;
+  font-size: 36px;
+  color: #2e7d32;
+  margin-bottom: 30px;
+}
+
+.agenda-subtitle {
+  color: #1b5e20;
+  margin-bottom: 15px;
+}
+
+/* CARD */
+.agenda-card {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(46, 125, 50, 0.15);
+  margin-bottom: 40px;
+}
+
+/* FORM */
+.agenda-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+}
+
+.agenda-form input {
+  padding: 12px 15px;
+  border-radius: 10px;
+  border: 1px solid #c8e6c9;
+  font-size: 15px;
+}
+
+.agenda-form input:focus {
+  outline: none;
+  border-color: #66bb6a;
+}
+
+/* AÇÕES */
+.agenda-acao {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+/* LISTA */
+.agenda-lista {
+  list-style: none;
+  padding: 0;
+}
+
+.agenda-item {
+  background: #f1f8f4;
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.agenda-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.status {
+  margin-top: 6px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.status.pendente {
+  color: #f9a825;
+}
+
+.status.confirmada {
+  color: #2e7d32;
+}
+
+/* BOTÕES */
+.agenda-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+/* VARIAÇÕES */
+.btn-um {
+  background: linear-gradient(135deg, #66bb6a, #4c944f);
+  color: white;
+  transition: 0.3s;
+  border-radius: 20px ;
+  box-shadow: 0 10px 25px rgba(46, 125, 50, 0.15);
+  cursor: pointer;
+}
+
+.btn-um:hover{
+background: #81c784;
+  transform: translateY(-2px);
+}
+
+
+.btn-dois {
+  background: #e0f2f1;
+  color: #2e7d32;
+}
+
+.btn.confirm {
+  background: #81c784;
+  color: #1b5e20;
+}
+
+.btn.edit {
+  background: #fff3e0;
+  color: #4daa3a;
+}
+
+.btn.delete {
+  background: #ffebee;
+  color: #c62828;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+.agenda-consulta {
+  text-align: center;
+  color: #777;
+}
+
+/* ===== ÁREA DO PACIENTE ===== */
+.paciente-page {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.paciente-title {
+  text-align: center;
+  font-size: 36px;
+  color: #2e7d32;
+  margin-bottom: 40px;
+}
+
+/* GRID */
+.paciente-grade {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+/* CARD */
+.paciente-card {
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 10px 25px rgba(46, 125, 50, 0.15);
+}
+
+/* TÍTULOS */
+.paciente-subtitle {
+  color: #1b5e20;
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+/* ALERTA */
+.paciente-alerta {
+  background: #f1f8f4;
+  border-left: 5px solid #66bb6a;
+  padding: 15px;
+  border-radius: 10px;
+  color: #2e7d32;
+  font-weight: 500;
+}
+
+/* RESPONSIVO */
+@media (max-width: 600px) {
+  .paciente-title {
+    font-size: 28px;
+  }
+
+  .paciente-card {
+    padding: 20px;
+  }
+}
+
+/* ===== LOGIN ===== */
+.login-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f3d2e, #2e7d32, #66bb6a);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-card {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+
+.login-title {
+  color: #2e7d32;
+  font-size: 32px;
+  margin-bottom: 25px;
+}
+
+/* INPUTS */
+.login-input {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: 1px solid #c8e6c9;
+  font-size: 15px;
+}
+
+.login-input:focus {
+  outline: none;
+  border-color: #66bb6a;
+}
+
+/* ESQUECI SENHA */
+.login-forgot {
+  display: block;
+  margin-bottom: 20px;
+  color: #2e7d32;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.login-forgot:hover {
+  text-decoration: underline;
+}
+
+/* TEXTO */
+.login-text {
+  margin: 15px 0;
+  font-weight: 600;
+  color: #444;
+}
+
+/* BOTÕES */
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 30px;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s; /* animação no botao ao passar o mouse em cima*/
+}
+
+.login-btn.paciente {
+  background: linear-gradient(135deg, #66bb6a, #2e7d32);
+  color: white;
+}
+
+.login-btn.nutri {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.login-btn:hover { /* animação no botao ao passar o mouse em cima*/
+  transform: translateY(-2px); /* animação no botao ao passar o mouse em cima*/
+  opacity: 0.9;
+}
+
+.login-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* RODAPÉ */
+.login-footer {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.login-footer a {
+  color: #2e7d32;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* ===== SOBRE ===== */
+
+.sobre-container {
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.sobre-container h1 {
+  text-align: center;
+  font-size: 40px;
+  color: #2e7d32;
+  margin-bottom: 20px;
+  
+}
+
+/* TEXTO */
+.sobre-texto {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 40px;
+  font-size: 17px;
+  line-height: 1.6;
+  color: #555;
+}
+.btn-sobre{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 30px;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s; /* animação no botao ao passar o mouse em cima*/
+  background: transparent;
+   line-height: 3.0;
+}
+.btn-sobre:hover{
+  background: #81c784;
+  transform: translateY(-2px);
+}
+
+/* IMAGENS */
+.sobre-imagens {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.sobre-imagens img {
+  width: 100%;
+  max-width: 300px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(46, 125, 50, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sobre-imagens img:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 35px rgba(46, 125, 50, 0.35);
+}
+
+/* BLOCOS */
+.sobre-blocos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+/* CARD */
+.bloco {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(46, 125, 50, 0.15);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.bloco:hover {
+  transform: translateY(-4px);
+}
+
+.bloco h3 {
+  font-size: 22px;
+  color: #1b5e20;
+  margin-bottom: 10px;
+}
+
+.bloco p {
+  color: #555;
+  font-size: 15px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 600px) {
+  .sobre-container h1 {
+    font-size: 30px;
+  }
+
+  .sobre-imagens img {
+    height: 200px;
+  }
+}
